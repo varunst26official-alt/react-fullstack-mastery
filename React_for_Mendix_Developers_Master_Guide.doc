@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>React Mastery Guide for Mendix Developers</title>
+<!--[if gte mso 9]>
+<xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>100</w:Zoom>
+  <w:DoNotOptimizeForBrowser/>
+ </w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+  body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #24292f;
+    margin: 40px;
+  }
+  h1 {
+    font-size: 22pt;
+    color: #0f4c81;
+    border-bottom: 2pt solid #0f4c81;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 15pt;
+    color: #16836b;
+    border-bottom: 1pt solid #e1e4e8;
+    padding-bottom: 4px;
+    margin-top: 24px;
+  }
+  h3 {
+    font-size: 12pt;
+    color: #2d3748;
+    margin-top: 16px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 10pt;
+  }
+  th {
+    background-color: #0f4c81;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #0f4c81;
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid #d0d7de;
+  }
+  tr:nth-child(even) {
+    background-color: #f6f8fa;
+  }
+  pre, code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9.5pt;
+    background-color: #f6f8fa;
+  }
+  pre {
+    padding: 12px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .highlight-box {
+    background-color: #f0fdf4;
+    border-left: 4pt solid #16836b;
+    padding: 10px 14px;
+    margin: 16px 0;
+  }
+  .career-box {
+    background-color: #eff6ff;
+    border-left: 4pt solid #2563eb;
+    padding: 10px 14px;
+    margin: 16px 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>📘 React Mastery Guide for Mendix Developers</h1>
+<p><em>A Comprehensive Reference for Enterprise Low-Code Developers Transitioning to Modern React & TypeScript</em></p>
+
+<div class="career-box">
+  <strong>Career Strategic Advantage:</strong><br>
+  With <strong>3 years of professional Mendix experience</strong>, you understand enterprise architectures, database associations, and REST APIs. Adding <strong>React + TypeScript</strong> enables you to build custom consumer-grade web apps and <strong>Custom Pluggable Widgets</strong> for Mendix enterprise projects.
+</div>
+
+<h2>🗺️ Part 1: The Mendix ➔ React Master Rosetta Stone</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mendix Studio Pro Concept</th>
+      <th>React / Modern Web Concept</th>
+      <th>How It Works in React</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Snippet / Building Block</strong></td>
+      <td><strong>React Component</strong> (<code>&lt;StatCard /&gt;</code>)</td>
+      <td>A reusable UI function returning JSX (HTML-like syntax).</td>
+    </tr>
+    <tr>
+      <td><strong>Snippet / Page Parameter</strong></td>
+      <td><strong>Props</strong> (<code>props.amount</code>)</td>
+      <td>Read-only input values passed downward from parent to child.</td>
+    </tr>
+    <tr>
+      <td><strong>Non-Persistable Entity (NPE)</strong></td>
+      <td><strong>Local State</strong> (<code>useState</code>)</td>
+      <td>Temporary client-side data stored in browser memory.</td>
+    </tr>
+    <tr>
+      <td><strong>Change Object Action</strong></td>
+      <td><strong>State Setter</strong> (<code>setBalance(...)</code>)</td>
+      <td>Triggers an immediate, reactive re-render of the component.</td>
+    </tr>
+    <tr>
+      <td><strong>Page On Enter (On-Load Nanoflow)</strong></td>
+      <td><code>useEffect(() =&gt; { ... }, [])</code></td>
+      <td>Code that runs automatically once when the screen first mounts.</td>
+    </tr>
+    <tr>
+      <td><strong>Attribute On Change Event</strong></td>
+      <td><code>useEffect(() =&gt; { ... }, [value])</code></td>
+      <td>Code that fires automatically whenever a watched variable changes.</td>
+    </tr>
+    <tr>
+      <td><strong>Calculated / Virtual Attribute</strong></td>
+      <td><strong>Derived State</strong></td>
+      <td>Computing metrics on-the-fly (<code>netWorth = assets - debt</code>) during render.</td>
+    </tr>
+    <tr>
+      <td><strong>Sub-Nanoflow / Client Action</strong></td>
+      <td><strong>Custom Hook</strong> (<code>useModalDismiss</code>)</td>
+      <td>Encapsulated, reusable client-side logic shared across components.</td>
+    </tr>
+    <tr>
+      <td><strong>Database Entity (PostgreSQL)</strong></td>
+      <td><strong>Persistent Backend (REST API / SQLite)</strong></td>
+      <td>Permanent records saved to a database via HTTP calls.</td>
+    </tr>
+    <tr>
+      <td><strong>Layout Grid (<code>col-6 / col-6</code>)</strong></td>
+      <td><strong>Flexbox (<code>display: flex</code>, <code>flex: 1</code>)</strong></td>
+      <td>CSS layout system that distributes elements across columns evenly.</td>
+    </tr>
+    <tr>
+      <td><strong>Errors &amp; Warnings / Best Practice Bot</strong></td>
+      <td><strong>Linter (<code>oxlint</code> / <code>eslint</code>)</strong></td>
+      <td>Static code analysis scanning for dead code and syntax errors.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>⚛️ Part 2: Core React Concepts</h2>
+
+<h3>1. Props vs. State</h3>
+<ul>
+  <li><strong>Props:</strong> Passed from the parent. The child cannot edit them directly.</li>
+  <li><strong>State:</strong> Internal to the component. Changing state causes React to re-render.</li>
+</ul>
+
+<h3>2. The Functional State Update (<code>prev =&gt; prev + 5000</code>)</h3>
+<p>React batches state updates asynchronously. Passing an arrow function with <code>prev</code> guarantees that React provides the latest, most up-to-date value at the exact millisecond of execution, preventing stale data overwrites.</p>
+
+<h3>3. The <code>useEffect</code> Hook</h3>
+<ul>
+  <li><strong><code>[]</code> (Empty array):</strong> Runs once on page load (Page On-Enter).</li>
+  <li><strong><code>[balance]</code> (With dependencies):</strong> Runs every time the specified variable changes (On-Change Event).</li>
+</ul>
+
+<h2>🎨 Part 3: CSS Fundamentals for Low-Code Developers</h2>
+
+<h3>The Box Model:</h3>
+<ul>
+  <li><strong>Content:</strong> The actual text or icon.</li>
+  <li><strong>Padding:</strong> Space inside the card border.</li>
+  <li><strong>Border:</strong> The frame outline.</li>
+  <li><strong>Margin:</strong> Space outside the border pushing adjacent elements away.</li>
+</ul>
+
+<h3>Flexbox (<code>display: flex</code>):</h3>
+<p>Enables modern responsive column layouts. Setting <code>flex: 1</code> on buttons makes them share available width equally (like Mendix <code>col-6</code>).</p>
+
+<h2>🛠️ Part 4: Modern Web Tooling Decoded</h2>
+<ul>
+  <li><strong><code>npm.cmd create vite@latest</code>:</strong> Modern ultra-fast project scaffolding tool.</li>
+  <li><strong><code>npm.cmd run dev</code>:</strong> Starts local dev server at <code>http://localhost:5173/</code> with sub-50ms Hot Reload.</li>
+  <li><strong>Linter:</strong> Static analysis tool (Oxlint runs in Rust at 50x speed compared to legacy ESLint).</li>
+</ul>
+
+<h2>💻 Part 5: Complete Working Interactive Ledger Code</h2>
+
+<pre><code>import { useState, useEffect } from 'react';
+import './App.css';
+
+export default function App() {
+  const [balance, setBalance] = useState&lt;number&gt;(() => {
+    const saved = localStorage.getItem('my_balance');
+    return saved !== null ? Number(saved) : 25000;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('my_balance', balance.toString());
+  }, [balance]);
+
+  const handleDeposit = () => {
+    setBalance(prev => prev + 5000);
+  };
+
+  const handleWithdraw = () => {
+    if (balance &gt;= 2000) {
+      setBalance(prev => prev - 2000);
+    } else {
+      alert("Insufficient balance!");
+    }
+  };
+
+  return (
+    &lt;div style={{ padding: '30px', fontFamily: 'sans-serif', maxWidth: '400px', margin: 'auto' }}&gt;
+      &lt;h2&gt;Personal Ledger&lt;/h2&gt;
+      &lt;div style={{ background: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '12px', padding: '20px' }}&gt;
+        &lt;p style={{ margin: 0, color: '#64748b' }}&gt;Available Balance&lt;/p&gt;
+        &lt;h1 style={{ margin: '8px 0', color: balance &gt;= 10000 ? '#16a34a' : '#dc2626' }}&gt;
+          ₹{balance.toLocaleString('en-IN')}
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div style={{ display: 'flex', gap: '10px', marginTop: '16px' }}&gt;
+        &lt;button onClick={handleDeposit} style={{ flex: 1, padding: '10px', background: '#16a34a', color: 'white', border: 'none', borderRadius: '6px' }}&gt;
+          + Deposit ₹5k
+        &lt;/button&gt;
+        &lt;button onClick={handleWithdraw} style={{ flex: 1, padding: '10px', background: '#dc2626', color: 'white', border: 'none', borderRadius: '6px' }}&gt;
+          - Spend ₹2k
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+
+<p style="text-align: center; color: #64748b; font-size: 9pt; margin-top: 40px;">
+  <em>Created for Varun Senthilkumar · Personal React Learning Journey</em>
+</p>
+
+</body>
+</html>
