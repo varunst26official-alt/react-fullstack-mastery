@@ -4,7 +4,77 @@
 
 ---
 
-## 🏢 1. Live Job Postings Captured from Naukri (Chennai Market)
+## 📈 1. Visual Skill Demand Distribution (Chennai Tech Jobs)
+
+```mermaid
+xychart-beta
+    title "Chennai Employer Skill Demand Frequency (% of Analyzed Job Postings)"
+    x-axis ["React 18", "TypeScript", "REST APIs", "Mendix v10", "Postgres/SQL", "Zustand/RTK", "Next.js", "Jest/Testing", "Docker/Cloud"]
+    y-axis "Demand Percentage (%)" 0 --> 100
+    bar [95, 75, 90, 85, 80, 70, 55, 60, 50]
+```
+
+---
+
+## 🏢 2. Visual Company Landscape in Chennai
+
+```mermaid
+flowchart TD
+    subgraph ENTERPRISE["Enterprise Consultancies & Tier-1 GCCs"]
+        D["Deloitte US-India Offices<br>• Java React FullStack<br>• Spring Boot + Agentic AI"]
+        I["Infosys Chennai<br>• React JS Developer<br>• TypeScript + Nest.js / Azure"]
+        C["Cognizant Chennai<br>• Modern React 18<br>• Micro-frontends & Testing"]
+        E["EPAM Systems<br>• Java Full Stack React<br>• Redux + Microservices"]
+    end
+
+    subgraph MENDIX_LEADS["Mendix & Low-Code Specialists"]
+        SG["Shreemax Global<br>• Senior Mendix Consultant<br>• ₹27.5 – ₹32.5 LPA"]
+        BI["Brakes India (TVS Group)<br>• Mendix Platform Lead<br>• Native Mobile & Cloud"]
+        BC["Bahwan CyberTek (BCT)<br>• Mendix v10.18.x<br>• REST & Domain Security"]
+        AP["Apex Group (Fund Services)<br>• Senior Mendix Engineer<br>• SQL Server & Financial APIs"]
+    end
+
+    subgraph MID_PRODUCT["High-Growth & Decoupled Product Firms"]
+        TC["Team Computers<br>• Full Stack Developer<br>• React.js + Spring Boot"]
+        HD["Han Digital<br>• React.js + Next.js Lead<br>• Redux + Jest Quality"]
+        SI["Santan Intellect<br>• AI-Enabled Full-Stack<br>• React + Python + AWS"]
+    end
+
+    ENTERPRISE --> HYBRID_TALENT["🎯 Target Profile: Decoupled Enterprise Lead (React 18 + Mendix 10)"]
+    MENDIX_LEADS --> HYBRID_TALENT
+    MID_PRODUCT --> HYBRID_TALENT
+```
+
+---
+
+## 💰 3. Visual Salary Range Comparison by Track (Chennai / India 3 YOE)
+
+```mermaid
+flowchart LR
+    subgraph T1["Track 1: Pure Mendix Dev"]
+        T1_VAL["₹6.0L – ₹10.5L LPA<br>Service MNCs"]
+    end
+
+    subgraph T2["Track 2: Pure React Frontend"]
+        T2_VAL["₹8.0L – ₹14.0L LPA<br>High Competition"]
+    end
+
+    subgraph T3["Track 3: React Full-Stack"]
+        T3_VAL["₹16.0L – ₹22.0L+ LPA<br>15x More Openings"]
+    end
+
+    subgraph T4["Track 4: Enterprise Decoupled Architect"]
+        T4_VAL["₹18.0L – ₹28.0L+ LPA<br>or AED 18k–25k/mo Dubai"]
+    end
+
+    T1 -->|Learn React + TypeScript| T3
+    T2 -->|Add Enterprise Backend & Mendix Moat| T4
+    T3 -->|Target Tier-1 GCCs & Dubai| T4
+```
+
+---
+
+## 📋 4. Live Job Postings Captured from Naukri (Chennai Market)
 
 ### A. Mendix Specialized & Enterprise Low-Code Roles
 | Company | Role Title | Experience | Key Tech Stack & Job Description Signals |
@@ -34,7 +104,7 @@
 
 ---
 
-## 🔍 2. Deep Technical Breakdown: What Employers Actually Demand
+## 🔍 5. Deep Technical Breakdown: What Employers Actually Demand
 
 ### 1. Frontend & React Core Requirements
 - **React 18 Architecture:** Functional components, Fiber reconciliation, and concurrent features (Transitions, Suspense).
@@ -59,47 +129,15 @@
 - **Integrations:** Consuming and publishing native **REST APIs**, **OData v3/v4 services**, and SOAP/JSON mapping.
 - **Security:** Module-level and Entity-level security rules, Role-Based Access Control (RBAC), SSO (SAML 2.0 / OAuth / OIDC).
 
-### 3. Databases, Cloud & DevOps
-- **Databases:** **PostgreSQL** (the standard for both Mendix runtime and modern containerized React backends) and **Microsoft SQL Server**.
-- **Cloud Platforms:** Mendix Cloud, **AWS** (EC2, S3, RDS, Lambda), and **Azure DevOps / Azure App Services**.
-- **DevOps & Testing:** Docker containerization, Git version control, GitHub Actions / Azure Pipelines, **Jest & React Testing Library (RTL)**, and **Playwright / Cypress** for E2E testing.
-
 ---
 
-## 📚 3. Your 90-Day Priority Study Checklist (Tailored for 3 YOE)
+## 💼 6. Visual ATS Keyword Cloud & Positioning
 
+```mermaid
+flowchart TD
+    KW["🔑 High-Impact ATS Keywords for Chennai Recruiters"]
+    KW --> F["Frontend: React.js 18, TypeScript, Next.js 15, Zustand, TanStack Query, Tailwind CSS"]
+    KW --> B["Backend & APIs: RESTful Services, OData, Node.js, Spring Boot, PostgreSQL, SQL Server"]
+    KW --> M["Enterprise Low-Code: Mendix Studio Pro v10, Microflows, Nanoflows, Pluggable Widgets, RBAC"]
+    KW --> T["DevOps & Quality: Playwright E2E, Vitest, Jest, Docker, CI/CD, Git, Agile/Scrum"]
 ```
-[ Week 1 - 3 ]  Modern JavaScript Internals, TypeScript Strict Mode & React 18 Hooks
-[ Week 4 - 6 ]  Zustand, TanStack Query v5, RESTful APIs & PostgreSQL Architecture
-[ Week 7 - 9 ]  Next.js 15 App Router, React Pluggable Widgets for Mendix & Server Actions
-[ Week 10-12 ]  Vitest / Jest, Playwright E2E, Docker, System Design & Naukri Interview Escalation
-```
-
-### Module 1: React & TypeScript (Weeks 1 to 4)
-- [ ] Master Event Loop (Microtask vs Macrotask), closures, and asynchronous execution.
-- [ ] TypeScript: Generics (`<T>`), Discriminated Unions for UI state handling, Utility types (`Partial`, `Pick`, `Omit`).
-- [ ] React 18: Fiber architecture, re-render avoidance, memoization profiling with React DevTools.
-- [ ] State: Implement a global store using **Zustand** and server caching using **TanStack Query v5**.
-- [ ] Testing: Write component tests using **React Testing Library** and end-to-end tests using **Playwright**.
-
-### Module 2: Full-Stack Backend & Integration (Weeks 5 to 8)
-- [ ] Build a decoupled Node.js (Express / Nest.js) REST API with JWT authentication stored in `HttpOnly` cookies.
-- [ ] Relational Data Modeling: Schema design, foreign key associations, indexing, and migrations with Prisma / Drizzle in PostgreSQL.
-- [ ] Next.js 15: Implement an authenticated dashboard using Server Components (RSC) and Server Actions.
-
-### Module 3: Enterprise Mendix + React Hybrid (Weeks 9 to 12)
-- [ ] Author a custom **React 18 Pluggable Widget** for Mendix Studio Pro (e.g., custom interactive chart, stepper slider, or bottom-sheet drawer).
-- [ ] Publish secure REST and OData endpoints in Mendix and consume them inside a standalone React Single-Page Application.
-- [ ] Document complex microflows with sub-microflows, error handling, and transaction rollback rules.
-
----
-
-## 💼 4. Naukri Profile Optimization for Chennai Recruiters
-
-### Naukri Headline:
-```text
-Senior Full-Stack Engineer | React 18 · TypeScript · Node.js · Mendix 10 Enterprise Architecture | 3 YOE | Immediate / 30 Days
-```
-
-### Key Skills to Tag on Naukri:
-`React.js`, `TypeScript`, `Next.js`, `Redux Toolkit`, `Zustand`, `TanStack Query`, `Mendix Studio Pro v10`, `Microflows`, `REST APIs`, `OData`, `PostgreSQL`, `SQL Server`, `Jest`, `Playwright`, `Tailwind CSS`, `Docker`, `CI/CD`.
