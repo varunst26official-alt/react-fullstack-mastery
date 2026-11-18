@@ -44,6 +44,7 @@ react-fullstack-mastery/
 │   ├── playwright-e2e-patterns.md    # 74 E2E journeys, visual regression, accessibility auditing
 │   └── vitest-component-testing.md   # Testing user behavior with React Testing Library & Vitest
 └── 07-interview-playbook/
+    ├── naukri-job-market-research-chennai.md         # Live Naukri crawling & skill demand analysis for 3 YOE (Chennai)
     ├── mendix-to-react-career-transition-and-salary-guide.md # 90-day transition roadmap, salary comparison & interview strategy
     ├── salary-negotiation-guide.md   # Breaking the 30% hike ceiling, 90-day notice period ladder
     └── top-50-technical-qa.md        # 50 high-frequency senior full-stack interview questions
